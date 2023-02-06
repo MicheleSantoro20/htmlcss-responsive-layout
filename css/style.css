@@ -6,7 +6,9 @@
 
 /* Palette di colori */
 :root {
-    --primary-color: 
+    --primary-color: #0084fd;
+    --light-blue: #b5ddff;
+    --secondary-color: #9792e4;
 }
 
 
@@ -23,4 +25,102 @@
 
 .align-center {
     align-items: center;
+}
+
+.header-site {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color);
+}
+.container{
+    align-items: center;
+    margin: auto;
+    height: 80px;
+    max-width: 1170px;
+    padding: 1rem;
+}
+
+ul.nav-hide li {
+    display: inline-block;
+    text-style: none;
+    display: none;
+}
+
+
+.logo, .hamburger {
+    background-color: var(--light-blue);
+}
+
+main {
+    margin-top: 100px
+}
+
+.cards {
+    width: calc(100% - 1rem);
+}
+
+.card {
+    background-color: var(--light-blue);
+    margin: auto;
+    text-align: center;
+    margin-bottom: 1rem;
+    height: 300px;
+    border-radius: 15px;
+}
+
+/*Responsive zone (Keep Danger)*/
+
+
+/* Responsive tablet (768px)*/
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+
+    .cards {
+        max-width: 730px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap ;
+    }
+    .card {
+        margin: 10px;
+        width: calc(100% / 3 - 20px);
+    }
+    div.cards .card:first-child {
+        width: calc(100% /3 *2 - 20px);
+    }
+}
+
+/* Responsive tablet (992px)*/
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+    
+    ul.nav-hide li {
+        display: inline-block;
+        width: 50px;
+        background-color: var(--light-blue);
+    }
+
+    .cards {
+        max-width: 960px;
+    }
+
+    div.cards .card:first-child {
+        display: flex;
+    }
+
+    .card-1-txt, .card-1-img {
+        width: 50%;
+    }
+
 }
