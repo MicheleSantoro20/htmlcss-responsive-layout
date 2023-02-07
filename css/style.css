@@ -58,12 +58,12 @@ main {
     margin-top: 100px
 }
 
-.cards, {
+.cards, .benefits-cards {
     width: calc(100% - rem);
     margin: auto;
 }
 
-.card, .planning-card {
+.card, .planning-card, .testimonial-card, .benefits-card {
     background-color: var(--light-blue);
     margin: auto;
     text-align: center;
@@ -87,6 +87,11 @@ main {
     padding: 10px;
 }
 
+.benefits h2 {
+    text-align: center;
+    margin: auto;
+}
+
 .planning div {
 
 }
@@ -94,38 +99,111 @@ main {
 .planning-bg {
     background-color: var(--secondary-color);
 }
+
+.testimonial-card {
+    background-color: var(--secondary-color);
+    margin-top: 10px
+}
+
+.about-us  {
+    width: calc(100% - 2rem);
+    margin: auto;
+    background-color: bisque;
+
+}
+
+.get-started-bg {
+    background-color: #9792e4;
+}
+
+.get-started {
+    max-width: 85%;
+    text-align: center;
+    margin: auto;
+    background-color: var(--primary-color);
+}
+
+.footer-bg {
+    background-color: grey;
+}
+
+.footer-content {
+    max-width: 75%;
+    margin: auto;
+    border: 1px solid red
+}
+
+
+
 /*Responsive zone (Keep Danger)*/
 
 
 /* Responsive tablet (768px)*/
 @media screen and (min-width: 768px) {
-    .container {
+    .container, testimonials {
         max-width: 730px;
     }
 
-    .cards {
+    .cards, .benefits-cards {
         max-width: 730px;
         margin: auto;
         display: flex;
         flex-wrap: wrap ;
     }
-    .card {
+
+    .card  {
         margin: 10px;
         width: calc(100% / 3 - 20px);
     }
+
     div.cards .card:first-child {
         width: calc(100% /3 *2 - 20px);
+    }
+
+    .planning {
+        display: flex;
     }
 
     .planning-card {
         max-width: 730px;
     }
+
+    .testimonial-card {
+        max-width: 730px;
+    }
+
+    .benefits-card {
+        margin: 10px;
+        width: calc(100% / 2 - 20px);
+    }
+
+    .about-us {
+        display: flex;
+        max-width: 700px;
+        margin: auto;
+        text-align: center;
+    }
+    .about-us-txt, .about-us-img {
+        border: 1px solid red;
+        margin: 10px;
+        width: calc(100%/2 -20px);
+    }
+
+    .get-started {
+        max-width: 650px;
+    }
+
+    .footer-content {
+        max-width: 600px;
+    }
+
 }
 
 /* Responsive tablet (992px)*/
 @media screen and (min-width: 992px) {
-    .container {
+    .container, .testimonials {
         max-width: 960px;
+        margin: auto;
     }
 
     .hamburger {
@@ -138,7 +216,7 @@ main {
         background-color: var(--light-blue);
     }
 
-    .cards {
+    .cards, .testimonial-card, .benefits-cards {
         max-width: 960px;
     }
 
@@ -147,16 +225,29 @@ main {
     }
 
     .card-1-txt, .card-1-img {
-        width:;
+        width:50%;
     }
 
     .planning {
-        display: flex;
         width: 760px;
         margin: auto;
     }
     .planning-card {
         width: calc(100%/2 -2rem);
         border: 1px solid red;
+    }
+
+    .benefits-card {
+        margin: 10px;
+        width: calc(100% / 3 - 20px);
+    }
+
+    .about-us {
+        max-width: 900px;
+        flex-grow: 1;
+
+    }
+    .about-us-txt {
+        width: 65%;
     }
 }
