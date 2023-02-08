@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+/*Font*/
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
 /* Palette di colori */
 :root {
     --primary-color: #0084fd;
@@ -11,10 +17,50 @@
     --secondary-color: #9792e4;
 }
 
+.white-txt {
+    color: white;
+    text-decoration: none;
+}
 
+.white-bg-button {
+    background-color: white;
+    padding: 6px;
+    border-radius: 15px;
+    text-decoration: none;
+}
 
+li a.white-bg-button {
+    color: black;
+}
 
+.card-1-txt {
+    padding: 1rem;
+    text-align: left;
+}
+.card-1-txt p{
+    margin: 20px 0px;
+}
 
+.card-1-img {
+    display: flex;
+}
+
+.card-1-img img {
+    height: 75%;
+    width: 65%;
+    align-self: flex-end;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.apple-button {
+    color: white;
+    background-color: var(--primary-color);
+    width: 50%;
+    padding: 5px 0;
+    border-radius: 50px;
+    text-align: center;
+}
 .flex {
     display: flex;
 }
@@ -45,13 +91,14 @@
 
 ul.nav-hide li {
     display: inline-block;
-    text-style: none;
+    list-style: none;
     display: none;
 }
 
 
-.logo, .hamburger {
-    background-color: var(--light-blue);
+.hamburger {
+    font-size: 30px;
+    color: white;
 }
 
 main {
@@ -68,9 +115,23 @@ main {
     margin: auto;
     text-align: center;
     margin-bottom: 1rem;
-    height: 300px;
     border-radius: 15px;
     width: calc(100% - 2rem)
+}
+
+.card-logo I{
+    font-size: 100px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card i, .card h2 {
+    color: var(--primary-color);
+}
+
+.card p {
+    color: rgb(97, 97, 97);
+    padding: 12px;
 }
 
 .planning-card:last-child {
@@ -92,8 +153,14 @@ main {
     margin: auto;
 }
 
-.planning div {
+.planning-card img {
+    width: 100%;
+}
 
+.planning-arrow i {
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    padding: 14px 16px;
 }
 
 .planning-bg {
@@ -105,12 +172,137 @@ main {
     margin-top: 10px
 }
 
+.testimonials-title {
+    text-align: center;
+}
+
+.testimonials-title h5 {
+    margin-top: 50px;
+}
+.testimonials-title h2 {
+    color: var(--secondary-color);
+    margin: 30px 0px 30px 0px;
+
+}
+
+.testimonials-title p {
+    margin: 0px 20px 
+}
+
+.testimonial-img img {
+    margin: 25px;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.testimonial-text  {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.text-container h3 {
+    margin: 30px 0px;
+}
+
+.testimonials {
+    padding-bottom: 80px;
+}
+
+.benefits {
+    background-color: var(--secondary-color);
+}
+.benefits h2 {
+    color: white;
+    padding: 30px 0px;
+}
+
+.benefits-card {
+    padding: 20px;
+    text-align: left;
+}
+.benefits-card h3 {
+    color: var(--secondary-color);
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.benefits-card h4 {
+    color: var(--secondary-color);
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.benefits-card p {
+    color: rgb(97, 97, 97);
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.benefits-card .violet-button {
+    text-align: left;
+}
+
+.violet-button {
+    padding: 5px 20px;
+    background-color: var(--secondary-color);
+    display: inline-block;
+    border-radius: 30px;
+    color: white;
+    text-align: left;
+}
+
 .about-us  {
     width: calc(100% - 2rem);
     margin: auto;
-    background-color: bisque;
-
 }
+
+.about-us-txt h1 {
+    font-size: 40px;
+    color: var(--secondary-color);
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.about-us-txt p {
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.about-us-img {
+    position: relative;
+}
+
+.about-us-img img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.about-us .quote i {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    font-size: 70px;
+    color: var(--secondary-color);
+}
+
+.about-us-img p {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-align: left;
+    padding: 20px 50px;
+}
+
+.violet-button i {
+    display: inline-block;
+}
+
 
 .get-started-bg {
     background-color: #9792e4;
@@ -120,18 +312,68 @@ main {
     max-width: 85%;
     text-align: center;
     margin: auto;
-    background-color: var(--primary-color);
+}
+
+.get-started h4 {
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.get-started h3 {
+    font-size: 30px;
+    color: white;
+    padding-bottom: 60px;
+}
+
+.get-started h2 {
+    font-size: 70px;
+    color: yellow;
+    padding-bottom: 30px;   
+}
+
+.get-started p {
+    color: white;
+    padding-bottom: 45px;
+}
+
+
+
+.get-started-button {
+    background-color: white;
+    color: var(--secondary-color);
+    padding: 20px 40px;
+    border-radius: 40px;;
+    display: inline-block;
+}
+
+.get-started h5 {
+    color: white;
+    padding: 20px;
+}
+
+.get-started h5 a {
+    color: white;
 }
 
 .footer-bg {
-    background-color: grey;
+    background-color: #333333;
 }
 
 .footer-content {
     max-width: 75%;
     margin: auto;
-    border: 1px solid red
 }
+
+.footer-content p {
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+.footer-content p a {
+    color: var(--secondary-color);
+}
+
 
 
 
@@ -162,14 +404,50 @@ main {
 
     .planning {
         display: flex;
+        justify-content: space-between;
     }
 
     .planning-card {
-        max-width: 730px;
+        width: 50%;
+    }
+    .pc2 h2, .pc2 p {
+        text-align: left;
+        color: white;
+    }
+    .pc2 img {
+        margin-bottom: 75px; 
+    }
+
+    .planning-card img {
+        width: 100%;
+    }
+
+    .planning-card img.app-developement {
+        width: 70%;
+    }
+
+    .planning-card p {
+        padding: 20px 0px;
     }
 
     .testimonial-card {
         max-width: 730px;
+        display:flex;
+    }
+    .testimonial-text  {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        color: white;
+    }
+
+    .testimonial-text p i {
+        display: inline;
+        font-size:20px;
+    }
+
+    .testimonial-text * {
+        width: 100%;
     }
 
     .benefits-card {
@@ -184,7 +462,6 @@ main {
         text-align: center;
     }
     .about-us-txt, .about-us-img {
-        border: 1px solid red;
         margin: 10px;
         width: calc(100%/2 -20px);
     }
@@ -212,9 +489,14 @@ main {
     
     ul.nav-hide li {
         display: inline-block;
-        width: 50px;
-        background-color: var(--light-blue);
+        width: 100px;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        font-style : none;
     }
+
+
 
     .cards, .testimonial-card, .benefits-cards {
         max-width: 960px;
@@ -234,7 +516,6 @@ main {
     }
     .planning-card {
         width: calc(100%/2 -2rem);
-        border: 1px solid red;
     }
 
     .benefits-card {
@@ -250,4 +531,12 @@ main {
     .about-us-txt {
         width: 65%;
     }
+    .about-us-img {
+        width: 35%;
+    }
+
+    .about-us-img i {
+        right: 50px;
+    }
+
 }
